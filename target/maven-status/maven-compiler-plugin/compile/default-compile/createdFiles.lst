@@ -1,0 +1,8 @@
+com\endava\apache\FileReadWithCommonsIO.class
+com\endava\calculator\expert\Expert.class
+com\endava\calculator\expert\ExpertOperations.class
+com\endava\apache\StringWithLang3.class
+com\endava\calculator\basic\BasicOperations.class
+com\endava\extensions\TestReporterExtension.class
+com\endava\matchers\InLastFiveMinutes.class
+com\endava\calculator\basic\Basic.class
