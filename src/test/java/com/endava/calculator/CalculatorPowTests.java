@@ -8,6 +8,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 @ExtendWith(TestReporterExtension.class)
 public class CalculatorPowTests {
     private ExpertOperations expertCalculator;
@@ -31,7 +33,7 @@ public class CalculatorPowTests {
         //when
         double result = expertCalculator.pow(2, 3);
         //then
-        System.out.println(result);
+        assertEquals(8, result);
     }
 
     @Test
@@ -42,7 +44,7 @@ public class CalculatorPowTests {
         //when
         double result = expertCalculator.pow(2, -1);
         //then
-        System.out.println(result);
+        assertEquals(0.5,result);
     }
 
     @Test
@@ -53,7 +55,7 @@ public class CalculatorPowTests {
         //when
         double result = expertCalculator.pow(-2, 3);
         //then
-        System.out.println(result);
+        assertEquals(-8, result);
     }
 
     @Test
@@ -64,6 +66,6 @@ public class CalculatorPowTests {
         //when
         double result = expertCalculator.pow(3, 0);
         //then
-        System.out.println(result);
+        assertEquals(1, result);
     }
 }

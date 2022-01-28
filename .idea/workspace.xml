@@ -5,9 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="82f87436-e08f-4764-a8e6-fd3fab064ef1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/endava/calculator/CalculatorAddTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/endava/calculator/CalculatorAddTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/endava/calculator/CalculatorFactorialTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/endava/calculator/CalculatorFactorialTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/endava/calculator/CalculatorMultiplyTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/endava/calculator/CalculatorMultiplyTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/endava/calculator/CalculatorPowTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/endava/calculator/CalculatorPowTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/endava/calculator/CalculatorAddTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/endava/calculator/CalculatorAddTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/endava/calculator/CalculatorMultiplyTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/endava/calculator/CalculatorMultiplyTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/endava/calculator/CalculatorPowTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/endava/calculator/CalculatorPowTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,22 +86,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CalculatorFactorialTests.shouldFactSimpleNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mavenCalc" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.endava.calculator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.endava.calculator" />
-      <option name="MAIN_CLASS_NAME" value="com.endava.calculator.CalculatorFactorialTests" />
-      <option name="METHOD_NAME" value="shouldFactSimpleNumber" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="CalculatorIT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mavenCalc" />
       <extension name="coverage">
@@ -111,7 +101,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CalculatorIT.shouldPowSimpleNumbers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CalculatorMultiplyTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mavenCalc" />
       <extension name="coverage">
         <pattern>
@@ -120,14 +110,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.endava.calculator" />
-      <option name="MAIN_CLASS_NAME" value="com.endava.calculator.CalculatorIT" />
-      <option name="METHOD_NAME" value="shouldPowSimpleNumbers" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="com.endava.calculator.CalculatorMultiplyTests" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CalculatorPowTests.shouldPowSimpleNumbers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CalculatorPowTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mavenCalc" />
       <extension name="coverage">
         <pattern>
@@ -137,7 +126,22 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.endava.calculator" />
       <option name="MAIN_CLASS_NAME" value="com.endava.calculator.CalculatorPowTests" />
-      <option name="METHOD_NAME" value="shouldPowSimpleNumbers" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CalculatorPowTests.shouldPowNegativeExponent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mavenCalc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.endava.calculator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.endava.calculator" />
+      <option name="MAIN_CLASS_NAME" value="com.endava.calculator.CalculatorPowTests" />
+      <option name="METHOD_NAME" value="shouldPowNegativeExponent" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -155,19 +159,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.Tags (api)" />
-      <item itemvalue="JUnit.CalculatorFactorialTests.shouldFactSimpleNumber" />
-      <item itemvalue="JUnit.CalculatorFactorialTests" />
       <item itemvalue="JUnit.CalculatorIT" />
-      <item itemvalue="JUnit.CalculatorIT.shouldPowSimpleNumbers" />
-      <item itemvalue="JUnit.CalculatorPowTests.shouldPowSimpleNumbers" />
+      <item itemvalue="JUnit.CalculatorMultiplyTests" />
+      <item itemvalue="JUnit.CalculatorPowTests.shouldPowNegativeExponent" />
+      <item itemvalue="JUnit.CalculatorPowTests" />
+      <item itemvalue="JUnit.CalculatorFactorialTests" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.CalculatorIT" />
-        <item itemvalue="JUnit.CalculatorIT.shouldPowSimpleNumbers" />
-        <item itemvalue="JUnit.CalculatorPowTests.shouldPowSimpleNumbers" />
         <item itemvalue="JUnit.CalculatorFactorialTests" />
-        <item itemvalue="JUnit.CalculatorFactorialTests.shouldFactSimpleNumber" />
+        <item itemvalue="JUnit.CalculatorPowTests" />
+        <item itemvalue="JUnit.CalculatorPowTests.shouldPowNegativeExponent" />
+        <item itemvalue="JUnit.CalculatorMultiplyTests" />
       </list>
     </recent_temporary>
   </component>

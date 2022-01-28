@@ -8,6 +8,11 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.hamcrest.Matchers.is;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 @ExtendWith(TestReporterExtension.class)
 public class CalculatorFactorialTests {
 
@@ -32,7 +37,7 @@ public class CalculatorFactorialTests {
         //when
         double result = expertCalculator.fact(4);
         //then
-        System.out.println(result);
+        assertEquals(24, result);
     }
 
     @Test
@@ -43,7 +48,7 @@ public class CalculatorFactorialTests {
         //when
         double result = expertCalculator.fact(0);
         //then
-        System.out.println(result);
+        assertEquals(1,result);
     }
 
     @Test
@@ -54,7 +59,7 @@ public class CalculatorFactorialTests {
         //when
         double result = expertCalculator.fact(12);
         //then
-        System.out.println(result);
+        assertEquals(479001600, result);
     }
 
 }

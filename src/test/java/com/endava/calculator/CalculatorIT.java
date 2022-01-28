@@ -6,6 +6,8 @@ import com.endava.calculator.expert.Expert;
 import com.endava.calculator.expert.ExpertOperations;
 import org.junit.jupiter.api.*;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 public class CalculatorIT {
     private BasicOperations basicCalculator;
     private ExpertOperations expertCalculator;
@@ -41,7 +43,7 @@ public class CalculatorIT {
         Long result = basicCalculator.multiply(2, 3);
 
         //then
-        System.out.println(result);
+        assertEquals(6, result);
     }
 
     @Test
@@ -53,7 +55,7 @@ public class CalculatorIT {
         Long result = basicCalculator.multiply(-2, 3, -2, 5);
 
         //then
-        System.out.println(result);
+        assertEquals(60, result);
     }
 
     @Test
@@ -65,7 +67,7 @@ public class CalculatorIT {
         Long result = basicCalculator.multiply(3);
 
         //then
-        System.out.println(result);
+        assertEquals(3, result);
     }
 
     @Test
@@ -77,7 +79,7 @@ public class CalculatorIT {
         Long result = basicCalculator.multiply(3, 0);
 
         //then
-        System.out.println(result);
+        assertEquals(0, result);
     }
 
     @Test
@@ -88,7 +90,7 @@ public class CalculatorIT {
         //when
         double result = expertCalculator.pow(2, 3);
         //then
-        System.out.println(result);
+        assertEquals(8, result);
     }
 
     @Test
@@ -99,7 +101,7 @@ public class CalculatorIT {
         //when
         double result = expertCalculator.pow(2, -1);
         //then
-        System.out.println(result);
+        assertEquals(0.5,result);
     }
 
     @Test
@@ -110,7 +112,7 @@ public class CalculatorIT {
         //when
         double result = expertCalculator.pow(-2, 3);
         //then
-        System.out.println(result);
+        assertEquals(-8, result);
     }
 
     @Test
@@ -121,7 +123,7 @@ public class CalculatorIT {
         //when
         double result = expertCalculator.pow(3, 0);
         //then
-        System.out.println(result);
+        assertEquals(1, result);
     }
 
     @Test
@@ -132,7 +134,7 @@ public class CalculatorIT {
         //when
         double result = expertCalculator.fact(4);
         //then
-        System.out.println(result);
+        assertEquals(24, result);
     }
 
     @Test
@@ -143,7 +145,7 @@ public class CalculatorIT {
         //when
         double result = expertCalculator.fact(0);
         //then
-        System.out.println(result);
+        assertEquals(1,result);
     }
 
     @Test
@@ -152,8 +154,8 @@ public class CalculatorIT {
         //given
 
         //when
-        double result = expertCalculator.fact(11);
+        double result = expertCalculator.fact(12);
         //then
-        System.out.println(result);
+        assertEquals(479001600, result);
     }
 }

@@ -8,6 +8,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 @ExtendWith(TestReporterExtension.class)
 public class CalculatorMultiplyTests {
     private BasicOperations basicCalculator;
@@ -32,7 +34,7 @@ public class CalculatorMultiplyTests {
         Long result = basicCalculator.multiply(2, 3);
 
         //then
-        System.out.println(result);
+        assertEquals(6, result);
     }
 
     @Test
@@ -44,7 +46,7 @@ public class CalculatorMultiplyTests {
         Long result = basicCalculator.multiply(-2, 3, -2, 5);
 
         //then
-        System.out.println(result);
+        assertEquals(60, result);
     }
 
     @Test
@@ -56,7 +58,7 @@ public class CalculatorMultiplyTests {
         Long result = basicCalculator.multiply(3);
 
         //then
-        System.out.println(result);
+        assertEquals(3, result);
     }
 
     @Test
@@ -68,6 +70,6 @@ public class CalculatorMultiplyTests {
         Long result = basicCalculator.multiply(3, 0);
 
         //then
-        System.out.println(result);
+        assertEquals(0, result);
     }
 }

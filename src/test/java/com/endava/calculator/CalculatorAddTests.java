@@ -104,7 +104,7 @@ public class CalculatorAddTests {
         Long result = basicCalculator.add(0);
 
         //then
-        System.out.println(result);
+        assertEquals(0, result);
     }
 
     @Test
@@ -116,7 +116,7 @@ public class CalculatorAddTests {
         Long result = basicCalculator.add(167);
 
         //then
-        System.out.println(result);
+        assertEquals(0, result);
     }
 
     @ParameterizedTest
